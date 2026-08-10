@@ -35,6 +35,9 @@ export const navItems = [
   ["Contact", "#contact"],
 ];
 
+const springerPublicationHref =
+  "https://link.springer.com/chapter/10.1007/978-3-032-10303-1_39";
+
 // Display order is independent of project content.
 export const projectCatalog = {
   freightReconciliation: {
@@ -80,7 +83,7 @@ export const projectCatalog = {
     status: "Published",
     state: "completed",
     accent: "#7654b4",
-    sourceLabel: "Research publication",
+    publicationHref: springerPublicationHref,
     description:
       "Developed a real-time computer vision pipeline for facial feature extraction and emotion classification for autism support, with Gujarati audio output for accessible emotional feedback.",
     tags: ["CNNs", "Computer Vision", "Deep Learning", "OpenCV", "Python"],
@@ -105,6 +108,24 @@ const contributionBullets = [
 ];
 
 export const timeline = [
+  {
+    id: "education",
+    years: "Jan 2027",
+    startDate: "2027-01-01",
+    endDate: null,
+    durationLabel: "Starting January 2027",
+    journeyLabel: "Graduate Education",
+    title: "Master's in Software Engineering",
+    org: "Ontario Tech University",
+    orgHref: "https://ontariotechu.ca/programs/graduate/engineering-and-applied-science/masters-software-engineering/",
+    status: "Incoming student",
+    state: "education",
+    description:
+      "Starting a master's in Software Engineering at Ontario Tech University in January 2027.",
+    icon: GraduationCap,
+    tone: "blue",
+    points: [],
+  },
   {
     years: "Mar 2025 - Present",
     startDate: "2025-03-01",
@@ -146,6 +167,7 @@ export const timeline = [
     ]
   },
   {
+    id: "undergraduate-education",
     years: "2021 - 2025",
     startDate: "2021-08-01",
     endDate: "2025-05-01",
@@ -201,13 +223,16 @@ export const skills = [
   },
 ];
 
-// Recognition documented in Viha's source portfolio. No external evidence URLs
-// were supplied, so these entries intentionally have no outbound action.
+// Recognition documented in Viha's source portfolio. Evidence links are added
+// only when supplied.
 export const achievements = [
   {
     year: "PICET 2024",
     title: "Springer Research Publication",
     organization: "Springer",
+    href: springerPublicationHref,
+    action: "View Springer publication",
+    platform: "Website",
     description:
       "Real-Time Emotion Recognition Using CNNs is published by Springer. The work received the Best Research Paper award at PICET 2024 and combines live facial emotion classification with Gujarati audio feedback for autism support applications.",
     icon: Award,

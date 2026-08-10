@@ -9,19 +9,24 @@ function ProjectLinks({ item }) {
           Live demo <span aria-hidden="true">↗</span>
         </a>
       ) : null}
+      {item.publicationHref ? (
+        <a className="project-link" href={item.publicationHref} target="_blank" rel="noreferrer">
+          View Springer publication
+        </a>
+      ) : null}
       {item.githubHref ? (
         <a className="project-link github-link" href={item.githubHref} target="_blank" rel="noreferrer">
           <GithubLogo size={15} /> GitHub <span aria-hidden="true"></span>
         </a>
-      ) : (
+      ) : !item.publicationHref ? (
         <span className="project-private">{item.sourceLabel || "Project details above"}</span>
-      )}
+      ) : null}
     </div>
   );
 }
 
 export function KanbanCard({ item }) {
-  const titleHref = item.liveHref || item.githubHref;
+  const titleHref = item.liveHref || item.githubHref || item.publicationHref;
   const Title = titleHref ? "a" : "span";
 
   return (

@@ -49,10 +49,10 @@ function SectionTitle({ children, id }) {
 export function TimelineSection({ timeline }) {
   return (
     <section className="content-section" id="experience" aria-labelledby="experience-title">
-      <SectionTitle id="experience-title">Experience</SectionTitle>
+      <SectionTitle id="experience-title">Experience & education</SectionTitle>
       <div className="experience-list">
         {timeline.map((item) => (
-          <article className="experience-row" id={item.state === "education" ? "education" : undefined} key={`${item.years}-${item.title}`}>
+          <article className="experience-row" id={item.id} key={`${item.years}-${item.title}`}>
             <div className="experience-org">
               {item.orgHref ? (
                 <a className="experience-company inline-link" href={item.orgHref} target="_blank" rel="noreferrer">
@@ -73,9 +73,11 @@ export function TimelineSection({ timeline }) {
                 ) : null}
               </div>
               <p>{item.description}</p>
-              <ul>
-                {item.points.map((point) => <li key={point}>{point}</li>)}
-              </ul>
+              {item.points.length ? (
+                <ul>
+                  {item.points.map((point) => <li key={point}>{point}</li>)}
+                </ul>
+              ) : null}
             </div>
             <p className="experience-date">
               <span>{item.years}</span>

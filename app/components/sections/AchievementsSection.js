@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, Globe2 } from "lucide-react";
+import { Globe2 } from "lucide-react";
 import { InstagramLogo, LinkedInLogo, XLogo } from "../ui/BrandLogos";
 
 export function AchievementsSection({ achievements, moments = [] }) {
@@ -44,7 +44,6 @@ export function AchievementsSection({ achievements, moments = [] }) {
                     >
                       <ActionIcon size={15} />
                       {achievement.action}
-                      <ArrowUpRight size={14} aria-hidden="true" />
                     </a>
                     {achievement.secondaryHref ? (
                       <a
@@ -55,7 +54,6 @@ export function AchievementsSection({ achievements, moments = [] }) {
                       >
                         <XLogo size={15} />
                         {achievement.secondaryAction}
-                        <ArrowUpRight size={14} aria-hidden="true" />
                       </a>
                     ) : null}
                   </div>
