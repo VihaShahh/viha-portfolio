@@ -2,7 +2,6 @@
 
 import {
   achievements,
-  achievementMoments,
   hobbies,
   navItems,
   profile,
@@ -18,7 +17,7 @@ import { HeroSection } from "../sections/HeroSection";
 import { StackSection } from "../sections/StackSection";
 import { ProjectsSection, TimelineSection } from "../sections/TimelineSection";
 
-export function PortfolioPage() {
+export function PortfolioPage({ achievementMoments = [] }) {
   return (
     <main className="site-shell" id="top">
       <SiteHeader navItems={navItems} profile={profile} />

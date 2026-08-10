@@ -228,6 +228,7 @@ export const skills = [
 export const achievements = [
   {
     year: "PICET 2024",
+    photoDirectory: "springer-research",
     title: "Springer Research Publication",
     organization: "Springer",
     href: springerPublicationHref,
@@ -240,6 +241,7 @@ export const achievements = [
   },
   {
     year: "2023",
+    photoDirectory: "cm-university-hackathon",
     title: "CM University Hackathon Winner",
     organization: "CM University",
     description: "Winner of the CM University Hackathon 2023.",
@@ -248,6 +250,7 @@ export const achievements = [
   },
   {
     year: "College",
+    photoDirectory: "csi-gcet",
     title: "CSI GCET Core Team Member",
     organization: "Computer Society of India, GCET Chapter",
     description:
@@ -257,5 +260,4 @@ export const achievements = [
   },
 ];
 
-export const achievementMoments = [];
 export const hobbies = [];

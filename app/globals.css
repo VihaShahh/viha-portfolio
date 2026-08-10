@@ -629,19 +629,16 @@ li {
 }
 
 .achievement-photo {
+  display: block;
   position: relative;
   overflow: hidden;
   aspect-ratio: 1.58;
   border: 1px solid var(--rule);
+  background: var(--accent-soft);
 }
 
 .achievement-photo img {
-  object-fit: cover;
-  transition: transform 420ms ease;
-}
-
-.achievement-moment:hover .achievement-photo img {
-  transform: scale(1.045);
+  object-fit: contain;
 }
 
 .achievement-moment figcaption {

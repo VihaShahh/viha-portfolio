@@ -2,7 +2,8 @@
 
 A Next.js portfolio for **Viha Shah**, a backend software developer based in
 Anand, Gujarat. It presents her experience at Chinmay Finlease Ltd. and AlgoAcharya,
-Information Technology education, selected projects, technical skills and recognition.
+Information Technology education, upcoming master's studies at Ontario Tech
+University starting January 2027, selected projects, technical skills and recognition.
 
 [GitHub](https://github.com/vihashahh) ·
 [LinkedIn](https://linkedin.com/in/vihashah) ·
@@ -47,5 +48,27 @@ The design retains the existing warm editorial layout and theme switcher. Theme
 selection stays in the visitor's browser. Project actions currently link to
 Viha's GitHub profile where no specific repository URL was supplied. Recognition
 without a source link is displayed without an external evidence action.
+
+## Achievement photos
+
+Add Viha's photos or certificate images to the matching folder:
+
+| Achievement | Folder |
+| --- | --- |
+| Springer research / PICET award | `public/achievements/springer-research/` |
+| CM University Hackathon | `public/achievements/cm-university-hackathon/` |
+| CSI GCET | `public/achievements/csi-gcet/` |
+
+The gallery discovers JPG, JPEG, PNG, WebP and AVIF files directly in these
+folders. You can add multiple photos per achievement. Use descriptive filenames
+such as `01-award-presentation.jpg` and `02-best-paper-certificate.png`; filenames
+supply captions and image descriptions, and numeric prefixes set their order
+within each achievement. Images display in full and open at original size when
+clicked. Use image files for certificates; PDF files are not included.
+
+Refresh the page during development after adding photos. For a production site,
+rebuild with `npm run build` and restart or redeploy to include new photos. Empty
+folders stay hidden, so no placeholder photos are needed. Files placed under
+`public/` will be publicly accessible when the site is published.
 
 Local planning, original design references and review captures remain ignored.

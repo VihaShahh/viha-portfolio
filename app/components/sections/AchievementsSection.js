@@ -67,15 +67,21 @@ export function AchievementsSection({ achievements, moments = [] }) {
       {moments.length ? (
         <div className="achievement-moments">
           {moments.map((moment) => (
-            <figure className="achievement-moment" key={moment.title}>
-              <div className="achievement-photo">
+            <figure className="achievement-moment" key={moment.image}>
+              <a
+                className="achievement-photo"
+                href={moment.image}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View full photo: ${moment.imageAlt}`}
+              >
                 <Image
                   alt={moment.imageAlt}
                   fill
                   sizes="(max-width: 760px) 100vw, 50vw"
                   src={moment.image}
                 />
-              </div>
+              </a>
               <figcaption>
                 <strong>{moment.title}</strong>
                 <span>{moment.detail}</span>
