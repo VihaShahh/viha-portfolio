@@ -434,6 +434,10 @@ li {
   border-top: 2px solid var(--project-rule);
 }
 
+.project-list:first-child {
+  margin-top: 0;
+}
+
 .project-row {
   display: grid;
   grid-template-columns: minmax(180px, 0.7fr) minmax(280px, 1.35fr) minmax(250px, 1fr);
@@ -776,6 +780,7 @@ li {
 
 .contact-links > div {
   display: flex;
+  flex-wrap: wrap;
   gap: 28px;
 }
 

@@ -80,6 +80,7 @@ export const projectCatalog = {
     status: "Awarded",
     state: "completed",
     accent: "#7654b4",
+    sourceLabel: "Research project",
     description:
       "Developed a real-time computer vision pipeline for facial feature extraction and emotion classification for autism support, with Gujarati audio output for accessible emotional feedback.",
     tags: ["CNNs", "Computer Vision", "Deep Learning", "OpenCV", "Python"],

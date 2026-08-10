@@ -4,16 +4,10 @@ export function HeroSection({ profile }) {
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-copy">
-        <p className="hero-eyebrow">Backend systems · Applied AI</p>
-        <h1 id="hero-title">Software Engineer</h1>
-        <p className="hero-lead">I build backends and practical AI tools.</p>
-        <p className="hero-intro">
-          Software developer at{" "}
-          <a className="inline-link" href={profile.odoo} target="_blank" rel="noreferrer">
-            Odoo
-          </a>
-          , working on accounting, invoicing, and automation.
-        </p>
+        <p className="hero-eyebrow">{profile.heroEyebrow}</p>
+        <h1 id="hero-title">{profile.role}</h1>
+        <p className="hero-lead">{profile.heroLead}</p>
+        <p className="hero-intro">{profile.heroIntro}</p>
         <div className="hero-links">
           <a className="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
           <a className="text-link github-link" href={profile.github} target="_blank" rel="noreferrer">
@@ -24,11 +18,7 @@ export function HeroSection({ profile }) {
       <aside className="hero-aside" aria-label="Current role and location">
         <p className="hero-note">
           <span>Currently at</span>
-          <strong>
-            <a className="inline-link" href={profile.odoo} target="_blank" rel="noreferrer">
-              Odoo
-            </a>
-          </strong>
+          <strong>{profile.employer}</strong>
         </p>
         <p className="hero-note">
           <span>Based in</span>

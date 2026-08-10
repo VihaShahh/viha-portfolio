@@ -21,13 +21,13 @@ import { ProjectsSection, TimelineSection } from "../sections/TimelineSection";
 export function PortfolioPage() {
   return (
     <main className="site-shell" id="top">
-      <SiteHeader navItems={navItems} />
+      <SiteHeader navItems={navItems} profile={profile} />
       <HeroSection profile={profile} projects={projects} />
       <TimelineSection timeline={timeline} />
       <ProjectsSection projects={projects} />
       <AchievementsSection achievements={achievements} moments={achievementMoments} />
-      <StackSection skills={skills} profile={profile} />
-      <HobbiesSection hobbies={hobbies} />
+      <StackSection skills={skills} />
+      {hobbies.length ? <HobbiesSection hobbies={hobbies} /> : null}
       <ContactSection profile={profile} />
     </main>
   );

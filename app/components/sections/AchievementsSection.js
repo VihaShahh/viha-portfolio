@@ -34,30 +34,32 @@ export function AchievementsSection({ achievements, moments = [] }) {
               <div>
                 <h3>{achievement.title}</h3>
                 <p>{achievement.description}</p>
-                <div className="achievement-actions">
-                  <a
-                    className="achievement-action"
-                    href={achievement.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <ActionIcon size={15} />
-                    {achievement.action}
-                    <ArrowUpRight size={14} aria-hidden="true" />
-                  </a>
-                  {achievement.secondaryHref ? (
+                {achievement.href ? (
+                  <div className="achievement-actions">
                     <a
                       className="achievement-action"
-                      href={achievement.secondaryHref}
+                      href={achievement.href}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <XLogo size={15} />
-                      {achievement.secondaryAction}
+                      <ActionIcon size={15} />
+                      {achievement.action}
                       <ArrowUpRight size={14} aria-hidden="true" />
                     </a>
-                  ) : null}
-                </div>
+                    {achievement.secondaryHref ? (
+                      <a
+                        className="achievement-action"
+                        href={achievement.secondaryHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <XLogo size={15} />
+                        {achievement.secondaryAction}
+                        <ArrowUpRight size={14} aria-hidden="true" />
+                      </a>
+                    ) : null}
+                  </div>
+                ) : null}
               </div>
             </article>
           );

@@ -79,7 +79,11 @@ export function TimelineSection({ timeline }) {
             </div>
             <p className="experience-date">
               <span>{item.years}</span>
-              <Duration startDate={item.startDate} endDate={item.endDate} />
+              {item.durationLabel ? (
+                <small>{item.durationLabel}</small>
+              ) : (
+                <Duration startDate={item.startDate} endDate={item.endDate} />
+              )}
             </p>
           </article>
         ))}

@@ -17,6 +17,9 @@ export function ContactSection({ profile }) {
               <GithubLogo size={15} /> GitHub ↗
             </a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            {profile.phone ? (
+              <a href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`}>Call me ↗</a>
+            ) : null}
           </div>
         </div>
       </div>

@@ -6,12 +6,16 @@ export function KanbanBoard({ items }) {
 
   return (
     <>
-      <div className="project-grid">
-        {visualProjects.map((item) => <KanbanCard item={item} key={item.id} />)}
-      </div>
-      <div className="project-list">
-        {textProjects.map((item) => <ProjectRow item={item} key={item.id} />)}
-      </div>
+      {visualProjects.length ? (
+        <div className="project-grid">
+          {visualProjects.map((item) => <KanbanCard item={item} key={item.id} />)}
+        </div>
+      ) : null}
+      {textProjects.length ? (
+        <div className="project-list">
+          {textProjects.map((item) => <ProjectRow item={item} key={item.id} />)}
+        </div>
+      ) : null}
     </>
   );
 }

@@ -14,7 +14,7 @@ function ProjectLinks({ item }) {
           <GithubLogo size={15} /> GitHub <span aria-hidden="true"></span>
         </a>
       ) : (
-        <span className="project-private">Private project</span>
+        <span className="project-private">{item.sourceLabel || "Project details above"}</span>
       )}
     </div>
   );
