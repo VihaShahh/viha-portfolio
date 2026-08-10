@@ -44,7 +44,6 @@ Thumbs.db
 !.vscode/extensions.json
 !.vscode/settings.json
 
-package-lock.json
 
 # Local planning and generated review artifacts
 openspec/
@@ -90,3 +89,6 @@ DEMO_SHOWCASE.md
 VALIDATION.md
 docs/images/demo-showcase-*
 # END shared local-artifact rules
+
+# Generated review captures and local design references
+output/
