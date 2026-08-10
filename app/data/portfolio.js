@@ -1,382 +1,258 @@
 import {
-  BarChart3,
-  Bot,
+  Award,
   BriefcaseBusiness,
   Building2,
+  Bot,
   Code2,
   Database,
-  FileJson2,
-  Fuel,
+  ChartNoAxesCombined,
   GraduationCap,
-  Handshake,
   Layers3,
-  Link2,
-  Lightbulb,
-  Network,
-  ShieldCheck,
+  Monitor,
   Trophy,
   UsersRound,
-  Volleyball,
 } from "lucide-react";
 
 export const profile = {
-  name: "Smit Joshi",
-  role: "Software Developer",
-  location: "Gandhinagar, Gujarat, India",
-  email: "joshismit2812@gmail.com",
-  linkedin: "https://linkedin.com/in/smit-joshi-ab1062224",
-  github: "https://github.com/smitzo",
-  odooGithub: "https://github.com/smjo-odoo",
-  odoo: "https://www.odoo.com",
+  name: "Viha Shah",
+  role: "Backend Software Developer",
+  location: "Anand, Gujarat, India",
+  email: "vihashah1103@gmail.com",
+  linkedin: "https://linkedin.com/in/vihashah",
+  github: "https://github.com/vihashahh",
+  phone: "+91-7990376108",
+  employer: "Chinmay Finlease Ltd.",
+  heroEyebrow: "Backend systems · Intelligent workflows",
+  heroLead: "I build reliable backends and intelligent workflows.",
+  heroIntro:
+    "Software developer at Chinmay Finlease Ltd., working across financial workflows, asynchronous processing, Node.js services, and applied AI.",
 };
 
 export const navItems = [
   ["Experience", "#experience"],
   ["Work", "#projects"],
-  ["About", "#about"],
+  ["Stack", "#stack"],
   ["Contact", "#contact"],
 ];
 
-/*
- * Project content and display order are intentionally separate. Reorder the
- * keys in projectOrder without moving or duplicating project details.
- */
+// Display order is independent of project content.
 export const projectCatalog = {
-  databoom: {
-    title: "DataBoom",
-    icon: Network,
-    eyebrow: "Synthetic data platform",
-    status: "Active build",
-    state: "progress",
-    accent: "#6d5dfc",
-    githubHref: "https://github.com/smitzo/DataBoom",
-    description:
-      "A synthetic data platform for relational, document, and graph datasets. It preserves keys and relationships, supports deterministic runs and validation, and keeps AI-assisted plans reviewable before generation.",
-    tags: ["Python", "FastAPI", "PostgreSQL", "Next.js", "LLM workflows"],
-  },
-   urlShortener: {
-    title: "URL Shortener",
-    icon: Link2,
-    eyebrow: "Production-minded link service",
-    status: "Active build",
-    state: "progress",
-    accent: "#0c8ea0",
-    githubHref: "https://github.com/smitzo/URL-Shortner",
-    description:
-      "A full-stack URL shortener with custom codes, safe-target checks, protected click analytics, CSV exports, audit history, rate limits, and a Dockerized PostgreSQL runtime.",
-    tags: ["Node.js", "Express", "TypeScript", "Prisma", "PostgreSQL"],
-  },
-  fuelUp: {
-    title: "Fuel Up",
-    icon: Fuel,
-    eyebrow: "Fuel and route planner",
-    status: "Shipped",
-    state: "completed",
-    accent: "#c16b2f",
-    githubHref: "https://github.com/smitzo/FuelUp",
-    liveHref: "https://fuel-up-sigma.vercel.app/",
-    screenshot: "/project-screenshots/fuel-up.png",
-    screenshotAlt: "Fuel Up route-planning interface",
-    description:
-      "A route planner for U.S. truckers that compares routes and recommends fuel stops using station prices, vehicle range, and trip constraints, with Redis caching and map visualization.",
-    tags: ["Django", "Next.js", "TypeScript", "Redis", "Docker"],
-  },
-  financeAgent: {
-    title: "Finance Agent",
+  freightReconciliation: {
+    title: "AI-Powered Freight Reconciliation Agent",
     icon: Bot,
-    eyebrow: "Freight-bill validation",
-    status: "In progress",
-    state: "progress",
-    featured: true,
+    eyebrow: "AI-assisted financial validation",
+    status: "Completed",
+    state: "completed",
     accent: "#337d5d",
-    githubHref: "https://github.com/smitzo/Finance_Agent",
-    liveHref: "https://freightflow-ai-steel.vercel.app",
-    screenshot: "/project-screenshots/finance-agent.png",
-    screenshotAlt: "Finance Agent deployed landing page",
+    githubHref: profile.github,
     description:
-      "A multi-tenant finance platform for validating carrier bills against contracts, shipments, and bills of lading through deterministic checks and audit-friendly workflows.",
-    tags: ["FastAPI", "PostgreSQL", "LangGraph", "Neo4j", "Python"],
+      "Designed an async multi-step workflow for freight invoice reconciliation against contracts and shipment records, with retry recovery, state persistence, and parallel validation flows.",
+    tags: ["FastAPI", "LangGraph", "PostgreSQL", "Docker", "GCP", "Python"],
   },
-  clipboard: {
-    title: "Clipboard",
-    icon: ShieldCheck,
-    eyebrow: "Cross-device text sharing",
-    status: "Live",
-    state: "completed",
-    accent: "#3478c9",
-    githubHref: "https://github.com/smitzo/clipboard",
-    liveHref: "https://clipboard-theta-eight.vercel.app",
-    screenshot: "/project-screenshots/clipboard-v2.png",
-    screenshotAlt: "Clipboard deployed room-sharing interface",
-    description:
-      "A temporary-room clipboard for moving text between devices. Room IDs and QR codes make joining quick, while participants can copy, update, or delete shared content.",
-    tags: ["Node.js", "React", "WebSockets"],
-  },
-  employeeAnalytics: {
+  workpulse: {
     title: "Workpulse",
-    icon: BarChart3,
-    eyebrow: "Operational reporting",
-    status: "Live",
-    state: "completed",
-    accent: "#a14875",
-    githubHref: "https://github.com/smitzo/Employee-Data-Analytics-App",
-    liveHref: "https://employee-data-analytics-app.vercel.app/",
-    screenshot: "/project-screenshots/workpulse.png",
-    screenshotAlt: "Workpulse demo admin dashboard",
-    description:
-      "An analytics application for exploring employee performance data through filters, drill-down views, and reporting flows built around structured spreadsheets.",
-    tags: ["Django", "Next.js", "PostgreSQL", "Python"],
-  },
-  claimProcessor: {
-    title: "Mediclaim OS",
-    icon: FileJson2,
-    eyebrow: "Document automation",
-    status: "Delivered",
-    state: "completed",
-    accent: "#7654b4",
-    githubHref: "https://github.com/smitzo/Document-Processor",
-    liveHref: "",
-    description:
-      "A medical-claim PDF service that classifies pages, routes relevant content through dedicated extraction steps, and returns one structured JSON response.",
-    tags: ["FastAPI", "LangGraph", "Python"],
-  },
-
-  paintCostAnalytics: {
-    title: "Paint Cost Analytics Tool",
-    icon: BarChart3,
+    icon: ChartNoAxesCombined,
     eyebrow: "Manufacturing analytics",
     status: "Delivered",
     state: "completed",
-    accent: "#9b663d",
-    githubHref: "https://github.com/smitzo/Paint-Cost-Analysis-Tool",
+    accent: "#a14875",
+    githubHref: profile.github,
     description:
-      "A manufacturing profitability tool that turns Excel sheets into paint-cost comparisons and clearer margin reporting for operators.",
-    tags: ["Python", "Pandas", "openpyxl", "Tkinter"],
+      "Delivered a desktop analytics platform to a manufacturing firm with MySQL schemas and real-time data pipelines for attendance, productivity, and workload dashboards.",
+    tags: ["Python", "Tkinter", "MySQL", "Data Analytics"],
   },
-  navijob: {
-    title: "Navijob",
-    icon: BriefcaseBusiness,
-    eyebrow: "Job platform",
-    status: "In progress",
-    state: "progress",
-    accent: "#3b7195",
+  waterQuality: {
+    title: "Water Quality Monitoring System",
+    icon: Database,
+    eyebrow: "Citizen reporting platform",
+    status: "Completed",
+    state: "completed",
+    accent: "#0c8ea0",
+    githubHref: profile.github,
     description:
-      "A candidate-focused job platform for role discovery, saved opportunities, and application workflows.",
-    tags: ["Django", "Next.js", "PostgreSQL", "Python"],
+      "Built a Java-based complaint tracking system with admin dashboards, scalable backend APIs, and structured lifecycle management for water contamination and supply issue reports.",
+    tags: ["Java", "Spring Boot", "MySQL", "REST APIs"],
+  },
+  emotionRecognition: {
+    title: "Real-Time Emotion Recognition",
+    icon: Bot,
+    eyebrow: "Best Research Paper, PICET 2024",
+    status: "Awarded",
+    state: "completed",
+    accent: "#7654b4",
+    description:
+      "Developed a real-time computer vision pipeline for facial feature extraction and emotion classification for autism support, with Gujarati audio output for accessible emotional feedback.",
+    tags: ["CNNs", "Computer Vision", "Deep Learning", "OpenCV", "Python"],
   },
 };
 
 export const projectOrder = [
-  "financeAgent",
-  "claimProcessor",
-  "databoom",
-  "employeeAnalytics",
-  "fuelUp",
-  "clipboard",
-  "urlShortener",
-  // "paintCostAnalytics",
-  // "navijob",
+  "freightReconciliation",
+  "workpulse",
+  "waterQuality",
+  "emotionRecognition",
 ];
 
-export const projects = projectOrder.map((key) => ({
-  id: key,
-  ...projectCatalog[key],
-}));
+export const projects = projectOrder.map((id) => ({ id, ...projectCatalog[id] }));
+
+const contributionBullets = [
+  "Engineered backend integration pipelines for Apollo Finvest APIs, including authentication, schema mapping, transactional data synchronisation, and fault handling",
+  "Designed async workflow automation for financial monitoring, reducing manual workload by 50%",
+  "Developed payment automation with event-driven status handling, improving turnaround by 20%",
+  "Optimised PostgreSQL queries and indexing for loan defaulter reports, reducing execution time from 8 seconds to 1 second",
+  "Built a centralised compliance document tracking platform with REST APIs and structured database architecture"
+];
 
 export const timeline = [
   {
-    years: "Jul 2025 - Present",
-    startDate: "2025-07-01",
+    years: "Mar 2025 - Present",
+    startDate: "2025-03-01",
     endDate: null,
+    journeyLabel: "Professional / Full-time Experience",
     title: "Software Developer",
-    org: "Odoo",
-    orgHref: profile.odoo,
-    team: "R&D Accounting & Invoicing",
+    org: "Chinmay Finlease Ltd.",
+    meta: "Chinmay Finlease Ltd.",
+    status: "Current role",
     state: "progress",
+    summary: "Backend financial workflow systems at Chinmay Finlease Ltd., with Apollo Finvest integrations, async automation, and compliance tooling.",
     description:
-      "Backend product engineering across accounting, invoicing, tax, and compliance systems.",
+      "Software Developer at Chinmay Finlease Ltd., engineering backend systems for financial workflows, API integration pipelines, asynchronous payment automation, reporting performance, and compliance document tracking.",
     icon: BriefcaseBusiness,
-    points: [
-      "Build Python services, REST APIs, and ORM-backed business logic",
-      "Work on e-invoicing, tax reports, validation, and third-party integrations",
-      "Implemented B2G e-invoicing flow for Greek users",
-      "Contribute tests, debugging, and technical documentation",
-    ],
-    href: profile.odooGithub,
-    action: "Open-source contributions",
+    tone: "purple",
+    visual: "api",
+    points: contributionBullets,
   },
   {
-    years: "Jan 2025 - Jul 2025",
-    startDate: "2025-01-01",
-    endDate: "2025-07-01",
+    years: "May 2024 - Jul 2024",
+    startDate: "2024-05-01",
+    endDate: "2024-07-31",
+    journeyLabel: "Internship Experience",
     title: "Software Development Intern",
-    org: "Odoo",
-    orgHref: profile.odoo,
-    team: "R&D Accounting & Invoicing",
+    org: "AlgoAcharya",
+    meta: "AlgoAcharya",
+    status: "Completed role",
     state: "completed",
+    summary: "Computer vision pipeline work for infrastructure monitoring and reporting.",
     description:
-      "Product development and testing across integrated business workflows.",
+      "Built applied computer vision workflows for pothole detection and bridge crack analysis using OpenCV, contour extraction, and severity classification.",
     icon: Building2,
+    tone: "violet",
+    visual: "workflow",
     points: [
-      "Built accounting and invoicing customizations",
-      "Contributed to testing, triage, and product fixes",
-    ],
+      "Built real-time computer vision pipeline for pothole detection and bridge crack analysis using OpenCV",
+      "Implemented contour extraction and severity classification, achieving 90%+ detection accuracy",
+      "Designed structured image analysis workflows for automated infrastructure monitoring and reporting"
+    ]
   },
   {
-    years: "Oct 2024 - Jan 2025",
-    startDate: "2024-10-01",
-    endDate: "2025-01-01",
-    title: "Backend & Analytics Developer",
-    org: "Freelance",
+    years: "2024",
+    startDate: "2024-02-01",
+    endDate: "2024-12-31",
+    durationLabel: "Research award",
+    journeyLabel: "Research Experience",
+    title: "Real-Time Emotion Recognition Using CNNs",
+    org: "PICET 2024",
+    meta: "Best Research Paper, PICET 2024",
+    status: "Best Research Paper",
     state: "completed",
+    summary: "Award-winning CNN-based real-time emotion recognition work for autism support applications.",
     description:
-      "Backend-supported analytics for spreadsheet-heavy operational teams.",
-    icon: Handshake,
+      "Developed a real-time emotion detection system using CNNs to classify facial emotions from live video streams and provide Gujarati audio feedback.",
+    icon: Award,
+    tone: "cyan",
+    visual: "orbit",
     points: [
-      "Built an employee management and analytics for a manufacturing firm",
-      "Built a paint-cost and profitability reporting tool for a manufacturing firm",
-    ],
+      "Implemented facial feature extraction and emotion classification pipelines for live video streams",
+      "Integrated Gujarati audio output for accessible real-time emotional feedback",
+      "Recognised as Best Research Paper at Parul University International Conference on Information and Technology, 2024"
+    ]
   },
   {
     years: "2021 - 2025",
-    startDate: "2021-09-01",
-    endDate: "2025-09-01",
-    title: "B.E. Computer Engineering",
+    startDate: "2021-08-01",
+    endDate: "2025-05-01",
+    durationLabel: "4 years",
+    journeyLabel: "College Education",
+    title: "B.E. Information Technology",
     org: "G H Patel College of Engineering & Technology",
+    meta: "G H Patel College of Engineering & Technology",
+    status: "Education",
     state: "education",
+    summary: "Information Technology degree with foundations in systems, databases, AI, machine learning, and computer vision.",
     description:
-      "A project-led computer engineering foundation across software and robotics",
+      "Computer Science and Information Technology foundation with project-heavy work across backend systems, AI, computer vision, and intelligent automation.",
     icon: GraduationCap,
+    iconSize: 34,
+    tone: "blue",
+    visual: "orbit",
     points: [
-      "CGPA 8.19/10",
-      "GUJCOST grant recipient for a self-balancing robot prototype",
+      "GPA: 8.08/10.0",
+      "Winner, CM University Hackathon 2023",
+      "LinkedIn Top Voice for contributions to collaborative technical articles",
+      "Core Team Member, Computer Society of India (CSI), GCET Chapter"
     ],
-    coursework: [
-      "Data Structures & Algorithms",
-      "Operating Systems",
-      "Computer Networks",
-      "Databases",
-      "Machine Learning",
-      "NLP",
-      "Big Data Analytics",
-    ],
-  },
-];
-
-export const achievements = [
-  {
-    year: "2024",
-    title: "iCreate Idea Accelerator (Startup Incubator residency)",
-    organization: "iCreate",
-    category: "Startup accelerator",
-    description:
-      "Selected for the iCreate Idea Accelerator Program and received structured mentorship for developing an early-stage technology idea.",
-    icon: Lightbulb,
-    accent: "#0c8ea0",
-    tags: ["Idea validation", "Startup mentorship", "Innovation"],
-    href: "https://www.linkedin.com/posts/smit-joshi-ab1062224_i-received-the-opportunity-of-having-a-1-share-7155177224197787649-4qfV/",
-    action: "View iCreate experience",
-  },
-  {
-    year: "2023",
-    title: "Smart India Hackathon 2023 Finalist",
-    organization: "Smart India Hackathon",
-    category: "National hackathon",
-    description:
-      "Reached the finalist stage of Smart India Hackathon 2023 as part of a team solving a real-world problem through technology.",
-    icon: Trophy,
-    accent: "#6d5dfc",
-    tags: ["National finalist", "Team innovation", "Problem solving"],
-    href: "https://www.linkedin.com/posts/smit-joshi-ab1062224_smartindiahackathon2023-smartindiahackathon-ugcPost-7144565725276352512-_krg/",
-    action: "View SIH journey",
-  },
-  {
-    year: "2023",
-    title: "Robofest Gujarat 3.0 Finalist",
-    organization: "Gujarat Council on Science and Technology",
-    category: "National robotics competition",
-    description:
-      "Reached the Level 3 finalist stage of Robofest Gujarat 3.0 with a self-balancing robot prototype.",
-    icon: Bot,
-    accent: "#9b663d",
-    tags: ["Level 3 finalist", "Self-balancing robot", "Prototype engineering"],
-    href: "https://www.gcet.ac.in/achivement.php?year=MjAyMw%3D%3D",
-    action: "View GCET recognition",
-    platform: "Website",
-    secondaryHref: "https://x.com/InfoGujcost/status/1678354294230364161/photo/4",
-    secondaryAction: "Twitter post by GUJCOST",
-    secondaryPlatform: "X",
-  },
-  {
-    year: "2023",
-    title: "CSI GCET Core Team Member",
-    organization: "Computer Society of India, GCET Student Branch",
-    category: "Student leadership",
-    description:
-      "Selected for the CSI GCET core team, helping manage technical and non-technical events and organize hackathons for the campus community.",
-    icon: UsersRound,
-    accent: "#a14875",
-    tags: ["Event operations", "Hackathon organizing", "Team leadership"],
-    href: "https://www.instagram.com/p/Cwt-Fz2LbwH/",
-    action: "View CSI announcement",
-    platform: "Instagram",
-  },
-];
-
-export const achievementMoments = [
-  {
-    title: "Smart India Hackathon 2023",
-    detail: "Grand Finale team",
-    image: "/Smartindiahackathon.jpeg",
-    imageAlt:
-      "Smit Joshi and the Geeks of AI team at the Smart India Hackathon 2023 Grand Finale",
-    accent: "#6d5dfc",
-  },
-  {
-    title: "Robofest 3.0",
-    detail: "Finalist team",
-    image: "/robofest3.jpeg",
-    imageAlt: "Smit Joshi with his Robofest 3.0 finalist team",
-    accent: "#9b663d",
-  },
+    coursework: ["Data Structures & Algorithms", "Operating Systems", "DBMS", "Computer Networks", "Machine Learning", "Software Engineering", "OOP", "Artificial Intelligence", "Computer Vision"]
+  }
 ];
 
 export const skills = [
   {
-    title: "Backend systems",
+    title: "Backend",
     icon: Code2,
-    featured: true,
-    items: ["Python", "FastAPI", "Django", "Node.js", "REST APIs", "Odoo", "Pydantic", "SQLAlchemy"],
+    items: ["Node.js", "NestJS", "Express.js", "FastAPI", "Django", "REST APIs"]
   },
   {
-    title: "AI engineering",
-    icon: Bot,
-    featured: true,
-    items: ["LangGraph", "LangChain", "RAG", "Prompt design", "Structured outputs"],
-  },
-  {
-    title: "Data & storage",
+    title: "Data Layer",
     icon: Database,
-    items: ["PostgreSQL", "Redis", "MongoDB", "Neo4j", "MySQL", "SQL", "Cypher"],
+    items: ["PostgreSQL", "MySQL", "MongoDB", "SQL"]
   },
   {
-    title: "Delivery",
+    title: "Infrastructure & Tooling",
     icon: Layers3,
-    items: ["Docker", "Linux", "Git", "GitHub Actions", "GCP", "AWS", "TypeScript", "Next.js"],
+    items: ["Docker", "Linux", "Git", "GitHub", "CI/CD", "GCP"]
+  },
+  {
+    title: "AI & Data",
+    icon: Bot,
+    items: ["OpenCV", "Scikit-Learn", "NumPy", "Pandas", "Computer Vision", "CNNs", "Deep Learning"]
+  },
+  {
+    title: "Languages & Frontend",
+    icon: Monitor,
+    items: ["Python", "Java", "JavaScript", "TypeScript", "C++", "React.js"]
   },
 ];
 
-export const hobbies = [
+// Recognition documented in Viha's source portfolio. No external evidence URLs
+// were supplied, so these entries intentionally have no outbound action.
+export const achievements = [
   {
-    title: "Sports, music & exploration",
-    icon: Volleyball,
+    year: "2024",
+    title: "Best Research Paper, PICET 2024",
+    organization: "Parul University",
     description:
-      "I have captained a volleyball team and actively play table tennis and other sports to stay fresh, energetic, and lively.",
-    interests: [
-      "🏐 Volleyball",
-      "🏓 Table tennis",
-      "🥋 MMA beginner",
-      "🎵 Musical instruments",
-    ],
+      "Recognised for Real-Time Emotion Recognition Using CNNs, with live facial emotion classification and Gujarati audio feedback for autism support applications.",
+    icon: Award,
+    accent: "#7654b4",
+  },
+  {
+    year: "2023",
+    title: "CM University Hackathon Winner",
+    organization: "CM University",
+    description: "Winner of the CM University Hackathon 2023.",
+    icon: Trophy,
+    accent: "#0c8ea0",
+  },
+  {
+    year: "College",
+    title: "CSI GCET Core Team Member",
+    organization: "Computer Society of India, GCET Chapter",
+    description:
+      "Core team member of the Computer Society of India, GCET Chapter during her Information Technology degree.",
+    icon: UsersRound,
+    accent: "#a14875",
   },
 ];
+
+export const achievementMoments = [];
+export const hobbies = [];
