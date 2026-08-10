@@ -76,11 +76,11 @@ export const projectCatalog = {
   emotionRecognition: {
     title: "Real-Time Emotion Recognition",
     icon: Bot,
-    eyebrow: "Best Research Paper, PICET 2024",
-    status: "Awarded",
+    eyebrow: "Research published by Springer",
+    status: "Published",
     state: "completed",
     accent: "#7654b4",
-    sourceLabel: "Research project",
+    sourceLabel: "Research publication",
     description:
       "Developed a real-time computer vision pipeline for facial feature extraction and emotion classification for autism support, with Gujarati audio output for accessible emotional feedback.",
     tags: ["CNNs", "Computer Vision", "Deep Learning", "OpenCV", "Python"],
@@ -146,29 +146,6 @@ export const timeline = [
     ]
   },
   {
-    years: "2024",
-    startDate: "2024-02-01",
-    endDate: "2024-12-31",
-    durationLabel: "Research award",
-    journeyLabel: "Research Experience",
-    title: "Real-Time Emotion Recognition Using CNNs",
-    org: "PICET 2024",
-    meta: "Best Research Paper, PICET 2024",
-    status: "Best Research Paper",
-    state: "completed",
-    summary: "Award-winning CNN-based real-time emotion recognition work for autism support applications.",
-    description:
-      "Developed a real-time emotion detection system using CNNs to classify facial emotions from live video streams and provide Gujarati audio feedback.",
-    icon: Award,
-    tone: "cyan",
-    visual: "orbit",
-    points: [
-      "Implemented facial feature extraction and emotion classification pipelines for live video streams",
-      "Integrated Gujarati audio output for accessible real-time emotional feedback",
-      "Recognised as Best Research Paper at Parul University International Conference on Information and Technology, 2024"
-    ]
-  },
-  {
     years: "2021 - 2025",
     startDate: "2021-08-01",
     endDate: "2025-05-01",
@@ -228,11 +205,11 @@ export const skills = [
 // were supplied, so these entries intentionally have no outbound action.
 export const achievements = [
   {
-    year: "2024",
-    title: "Best Research Paper, PICET 2024",
-    organization: "Parul University",
+    year: "PICET 2024",
+    title: "Springer Research Publication",
+    organization: "Springer",
     description:
-      "Recognised for Real-Time Emotion Recognition Using CNNs, with live facial emotion classification and Gujarati audio feedback for autism support applications.",
+      "Real-Time Emotion Recognition Using CNNs is published by Springer. The work received the Best Research Paper award at PICET 2024 and combines live facial emotion classification with Gujarati audio feedback for autism support applications.",
     icon: Award,
     accent: "#7654b4",
   },
