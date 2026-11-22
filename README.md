@@ -56,8 +56,7 @@ Add Viha's photos or certificate images to the matching folder:
 | Achievement | Folder |
 | --- | --- |
 | Springer research / PICET award | `public/achievements/springer-research/` |
-| CM University Hackathon | `public/achievements/cm-university-hackathon/` |
-| CSI GCET | `public/achievements/csi-gcet/` |
+| CVM University Hackathon | `public/achievements/cm-university-hackathon/` |
 
 The gallery discovers JPG, JPEG, PNG, WebP and AVIF files directly in these
 folders. You can add multiple photos per achievement. Use descriptive filenames

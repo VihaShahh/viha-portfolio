@@ -187,7 +187,7 @@ export const timeline = [
     visual: "orbit",
     points: [
       "GPA: 8.08/10.0",
-      "Winner, CM University Hackathon 2023",
+      "Winner, CVM University Hackathon 2023",
       "LinkedIn Top Voice for contributions to collaborative technical articles",
       "Core Team Member, Computer Society of India (CSI), GCET Chapter"
     ],
@@ -241,10 +241,10 @@ export const achievements = [
   },
   {
     year: "2023",
-    photoDirectory: "cm-university-hackathon",
-    title: "CM University Hackathon Winner",
-    organization: "CM University",
-    description: "Winner of the CM University Hackathon 2023.",
+    photoDirectory: "cvm-university-hackathon",
+    title: "CVM University Hackathon Winner",
+    organization: "CVM University",
+    description: "Winner of the CVM University Hackathon 2023.",
     icon: Trophy,
     accent: "#0c8ea0",
   },
