@@ -15,17 +15,17 @@ import {
 
 export const profile = {
   name: "Viha Shah",
-  role: "Backend Software Developer",
-  location: "Anand, Gujarat, India",
+  role: "Software Developer & M.Eng. Student",
+  location: "Oshawa, Ontario, Canada",
   email: "vihashah1103@gmail.com",
   linkedin: "https://linkedin.com/in/vihashah",
   github: "https://github.com/vihashahh",
   phone: "+91-7990376108",
-  employer: "Chinmay Finlease Ltd.",
+  employer: "M.Eng. Student at Ontario Tech University",
   heroEyebrow: "Backend systems · Intelligent workflows",
-  heroLead: "I build reliable backends and intelligent workflows.",
+  heroLead: "Building scalable software, reliable backends, and intelligent solutions.",
   heroIntro:
-    "Software developer at Chinmay Finlease Ltd., working across financial workflows, asynchronous processing, Node.js services, and applied AI.",
+    "Software Developer with professional experience in financial technology, specializing in backend engineering, Node.js services, REST API integrations, asynchronous workflows, database optimization, and applied AI.",
 };
 
 export const navItems = [
@@ -110,26 +110,27 @@ const contributionBullets = [
 export const timeline = [
   {
     id: "education",
-    years: "Jan 2027",
+    years: "Jan 2027 – Present",
     startDate: "2027-01-01",
     endDate: null,
-    durationLabel: "Starting January 2027",
+    durationLabel: "January 2027 – Present",
     journeyLabel: "Graduate Education",
-    title: "Master's in Software Engineering",
+    title: "Master of Engineering – Software Engineering (Co-op)",
     org: "Ontario Tech University",
-    orgHref: "https://ontariotechu.ca/programs/graduate/engineering-and-applied-science/masters-software-engineering/",
-    status: "Incoming student",
+    orgHref:
+      "https://ontariotechu.ca/programs/graduate/engineering-and-applied-science/masters-software-engineering/",
+    status: "Student",
     state: "education",
     description:
-      "Starting a master's in Software Engineering at Ontario Tech University in January 2027.",
+      "Pursuing a Master of Engineering in Software Engineering (Co-op) at Ontario Tech University, Oshawa, Ontario, Canada, with a focus on software engineering, backend development, system design, scalable applications, and modern software technologies.",
     icon: GraduationCap,
     tone: "blue",
     points: [],
   },
   {
-    years: "Mar 2025 - Present",
+    years: "Mar 2025 - Oct 2026",
     startDate: "2025-03-01",
-    endDate: null,
+    endDate: "2026-10-23",
     journeyLabel: "Professional / Full-time Experience",
     title: "Software Developer",
     org: "Chinmay Finlease Ltd.",
@@ -227,7 +228,7 @@ export const skills = [
 // only when supplied.
 export const achievements = [
   {
-    year: "PICET 2024",
+    year: "2026",
     photoDirectory: "springer-research",
     title: "Springer Research Publication",
     organization: "Springer",
@@ -235,7 +236,7 @@ export const achievements = [
     action: "View Springer publication",
     platform: "Website",
     description:
-      "Real-Time Emotion Recognition Using CNNs is published by Springer. The work received the Best Research Paper award at PICET 2024 and combines live facial emotion classification with Gujarati audio feedback for autism support applications.",
+      "Real-Time Emotion Recognition Using CNNs is published by Springer. The work combines live facial emotion classification with Gujarati audio feedback for autism support applications.",
     icon: Award,
     accent: "#7654b4",
   },
@@ -249,12 +250,12 @@ export const achievements = [
     accent: "#0c8ea0",
   },
   {
-    year: "College",
+    year: "2022",
     photoDirectory: "csi-gcet",
     title: "CSI GCET Core Team Member",
     organization: "Computer Society of India, GCET Chapter",
     description:
-      "Core team member of the Computer Society of India, GCET Chapter during her Information Technology degree.",
+      "Managed technical and non-technical events. Organized workshops, seminars, and competitions for students in the Computer Society of India (CSI) GCET Chapter.",
     icon: UsersRound,
     accent: "#a14875",
   },
